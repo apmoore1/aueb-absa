@@ -5,3 +5,7 @@ This repository contains the systems which participated in SemEval-2016 Task 5: 
 # Source code
 
 Soon to be released.
+
+# Features
+
+The complete list of the features used for each task can be found in the features folder.
