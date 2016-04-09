@@ -1,20 +1,10 @@
-# aueb-absa
+# AUEB-ABSA
 
-This repository contains the systems which participated in SemEval-2016 Task 5: Aspect Based Sentiment Analysis (http://alt.qcri.org/semeval2016/task5/) and specifically in Subtask-1 on all 3 Slots, namely Aspect Category Detection (ACD), Opinion Target Expression (OTE) and Sentiment Polarity (SP). All our systems, in all tasks, were ranked in the top 6 positions (http://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools).
+This is the software that accompanies the paper "AUEB-ABSA at SemEval-2016 Task 5 Aspect-Based Sentiment Analysis:
+Detection of Aspect Category, Opinion Target Expression and Sentiment Polarity" by Dionysios Xenos, Panagiotis Theodorakakos, John Pavlopoulos, Prodromos Malakasiotis and Ion Androutsopoulos. The paper describes our submissions to the Aspect Based Sentiment Analysis task of SemEval-2016. For Aspect Category Detection (Subtask1/Slot1), we used multiple ensembles, based on Support Vector Machine classifiers. For Opinion Target Expression extraction (Subtask1/Slot2), we used a sequence labeling approach with Conditional Random Fields. For Polarity Detection (Subtask1/Slot3), we used an ensemble of two supervised classifiers, one based on hand crafted features and one based on word embeddings. Our systems were ranked in the top 6 positions in all the tasks we participated.
 
 # Source code
 
 Soon to be released.
-
-# Build [Linux]
-
-Install Python 2.7
-
-Download requirements.txt 
-
-On your terminal type
-```
-$ pip install -r requirements.txt
-```
 
 
