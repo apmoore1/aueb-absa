@@ -1,0 +1,194 @@
+food 
+service 
+place 
+restaurant 
+staff 
+pizza 
+atmosphere 
+sushi 
+decor 
+waiter 
+menu 
+dishes 
+drinks 
+meal 
+waitress 
+ambience 
+fish 
+wine list 
+dessert 
+spot 
+rolls 
+manager 
+bagels 
+portions 
+wine 
+indian food 
+ingredients 
+waiters 
+wait staff 
+hot dogs 
+location 
+people 
+casa la femme 
+wait 
+ambiance 
+salads 
+lobster sandwich 
+crust 
+rice 
+view 
+hostess 
+dinner 
+toppings 
+delivery 
+dish 
+pad thai 
+music 
+salad 
+vibe 
+waitstaff 
+appetizers 
+sauce 
+wines 
+chef 
+sandwiches 
+salmon 
+the four seasons 
+hot dog 
+seafood 
+chicken 
+japanese food 
+customer service 
+suan 
+spicy tuna roll 
+server 
+servers 
+setting 
+meals 
+thai food 
+martinis 
+sashimi 
+specials 
+dim sum 
+taiwanese food 
+environment 
+pasta 
+front of house staff 
+spreads 
+rice avenue 
+entree 
+pastas 
+martini 
+maitre-d 
+space 
+feel 
+owner 
+management 
+spinach 
+margherita pizza 
+bagel 
+calamari 
+bar 
+bark 
+cheese plate 
+resturant 
+tuna 
+veal 
+leon 
+seating 
+beer 
+mizu 
+prix fixe menu 
+portion 
+pasta penne 
+big wong 
+exotic food 
+pizza 33 
+congee 
+stone bowl 
+lunch buffet 
+half price sushi deal 
+neighborhood 
+vegetarian dish 
+indian 
+scallops 
+guacamole 
+sake 
+fried shrimp 
+dal bukhara 
+beers 
+bartender 
+room 
+foods 
+wine selection 
+lucky strike 
+quesadilla 
+establishment 
+lobster roll 
+prixe fixe tasting menu 
+margaritas 
+eats 
+patio 
+pizza place 
+lobster bisque 
+chicken casserole 
+bread 
+japanese tapas 
+side dishes 
+selecion of wines 
+tiramisu 
+grilled mahi mahi 
+bottles of wine 
+cheese 
+scene 
+lobster knuckles 
+jekyll and hyde pub 
+cream cheeses 
+rice dishes 
+interior 
+water's edge 
+outdoor atmosphere 
+fried dumplings 
+edamame pureed 
+dog 
+cafe noir 
+shabu shabu 
+bbe $29 fixe prix menu 
+thai 
+cheeseburger 
+zenkichi 
+delivery guys 
+chinese food 
+brasserie 
+triple color and norwegetan rolls 
+bloom's 
+selection of thin crust pizza 
+all you can eat deal 
+eggplant 
+mussles 
+ravioli 
+french onion soup 
+dumplings 
+fish and chips 
+dosas 
+raymond 
+modern japanese brasserie 
+yamato 
+bbq ribs 
+tables 
+pasta mains 
+outdoor seating 
+crowd 
+lobster 
+sauces 
+red dragon roll 
+caviar 
+filet 
+sea bass 
+girl 
+jekyll and hyde 
+fried oysters and clams 
+pacifico 
+pizzas 
+trattoria 
