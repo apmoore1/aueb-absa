@@ -6,8 +6,8 @@
 import numpy as np
 import codecs
 import xml.etree.ElementTree as ET
-import absa2016_v5
-import absa2016_v6
+import absa2016_lexicons
+import absa2016_embeddings
 
 #UNCOMMENT TO USE EMBEDDINGS MODEL
 #import gensim
@@ -54,17 +54,17 @@ print '---------------- Restaurants ----------------'
 print
 
 print('-------- Features Model--------')
-fea1 = absa2016_v5.features('restaurants/ABSA16_Restaurants_Train_SB1_v2.xml','restaurants/EN_REST_SB1_TEST.xml','rest')
-train_vector,train_tags = absa2016_v5.features.train(fea1,'rest')
-test_vector = absa2016_v5.features.test(fea1,'rest')
-predictionsRest1 = absa2016_v5.features.results(fea1, train_vector, train_tags, test_vector,'rest')
+fea1 = absa2016_lexicons.features('restaurants/ABSA16_Restaurants_Train_SB1_v2.xml','restaurants/EN_REST_SB1_TEST.xml','rest')
+train_vector,train_tags = absa2016_lexicons.features.train(fea1,'rest')
+test_vector = absa2016_lexicons.features.test(fea1,'rest')
+predictionsRest1 = absa2016_lexicons.features.results(fea1, train_vector, train_tags, test_vector,'rest')
 print 'End version 5'
 
 print('-------- Embeddings Model--------')
-fea1 = absa2016_v6.features('restaurants/ABSA16_Restaurants_Train_SB1_v2.xml','restaurants/EN_REST_SB1_TEST.xml',m)
-train_vector,train_tags = absa2016_v6.features.train(fea1)
-test_vector = absa2016_v6.features.test(fea1)
-predictionsRest2 = absa2016_v6.features.results(fea1, train_vector, train_tags, test_vector,'rest') #store probabilities for each of the three class for each sentence
+fea1 = absa2016_embeddings.features('restaurants/ABSA16_Restaurants_Train_SB1_v2.xml','restaurants/EN_REST_SB1_TEST.xml',m)
+train_vector,train_tags = absa2016_embeddings.features.train(fea1)
+test_vector = absa2016_embeddings.features.test(fea1)
+predictionsRest2 = absa2016_embeddings.features.results(fea1, train_vector, train_tags, test_vector,'rest') #store probabilities for each of the three class for each sentence
 print 'End version 6'
 
 #both methods "vote"
@@ -166,17 +166,17 @@ print '---------------- Laptops ----------------'
 print
 
 print('-------- Features Model--------')
-fea2 = absa2016_v5.features('laptops/ABSA16_Laptops_Train_SB1_v2.xml','laptops/EN_LAPT_SB1_TEST_.xml','lap')
-train_vector,train_tags = absa2016_v5.features.train(fea2,'lap')
-test_vector = absa2016_v5.features.test(fea2,'lap')
-predictionsLap1 = absa2016_v5.features.results(fea2, train_vector, train_tags, test_vector,'lap')
+fea2 = absa2016_lexicons.features('laptops/ABSA16_Laptops_Train_SB1_v2.xml','laptops/EN_LAPT_SB1_TEST_.xml','lap')
+train_vector,train_tags = absa2016_lexicons.features.train(fea2,'lap')
+test_vector = absa2016_lexicons.features.test(fea2,'lap')
+predictionsLap1 = absa2016_lexicons.features.results(fea2, train_vector, train_tags, test_vector,'lap')
 print 'End version 5'
 
 print('-------- Embeddings Model--------')
-fea2 = absa2016_v6.features('laptops/ABSA16_Laptops_Train_SB1_v2.xml','laptops/EN_LAPT_SB1_TEST_.xml',m)
-train_vector,train_tags = absa2016_v6.features.train(fea2)
-test_vector = absa2016_v6.features.test(fea2)
-predictionsLap2 = absa2016_v6.features.results(fea2, train_vector, train_tags, test_vector,'lap') #store probabilities for each of the three class for each sentence
+fea2 = absa2016_embeddings.features('laptops/ABSA16_Laptops_Train_SB1_v2.xml','laptops/EN_LAPT_SB1_TEST_.xml',m)
+train_vector,train_tags = absa2016_embeddings.features.train(fea2)
+test_vector = absa2016_embeddings.features.test(fea2)
+predictionsLap2 = absa2016_embeddings.features.results(fea2, train_vector, train_tags, test_vector,'lap') #store probabilities for each of the three class for each sentence
 print 'End version 6'
 
 #both methods "vote"

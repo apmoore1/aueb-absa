@@ -19,7 +19,29 @@ publicly available.
 Python version 2.7.10
 ```
 
-Install the required libraries:
+## Download
+
+```
+git clone https://github.com/nlpaueb/aueb-absa.git
+cd polarity_detection
+```
+
+If you are using virtualenv:
+
+```
+virtualenv env
+source env/bin/activate
+```
+
+## Requirements
+
+Install the required libraries using requirements.txt:
+
+```
+pip install -r requirements.txt 
+```
+
+or, by hand:
 
 ```
 pip install numpy==1.11.0
@@ -28,18 +50,27 @@ pip install scikit-learn==0.17.1
 pip install nltk==3.2.1
 ```
 
-## Extra packages:
+## Extra
 
-After installing nltk, get into python shell and download punkt:
+Download Punkt for NLTK:
 
 ```
 python -c "import nltk;nltk.download('punkt')"
 ```
 
-## Run the project:
+## Run
+
+Unzip required files:
 
 ```
-python absa2016_v7.py
+gunzip helpingEmbeddings.txt.gz
+gunzip idf_amazon.txt.gz
+```
+
+Run the latest version:
+
+```
+python absa2016_v1.py
 ```
 
 ## Troubleshooting
@@ -48,7 +79,7 @@ Make sure that you have the following requirements installed:
 
 ```
 sudo apt-get install build-essential
-sudo apt-get install libreadline-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev gfortran libatlas-base-dev python-pip python-dev
+sudo apt-get install libreadline-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev gfortran libatlas-base-dev python-pip python-dev git
 ```
 
 Make sure that you have a java compiler installed needed for the pos tagging:
