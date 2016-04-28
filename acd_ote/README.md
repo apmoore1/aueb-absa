@@ -10,7 +10,8 @@ Install the required libraries and dependencies:
 
 ```
 $ sudo apt-get install python-pip python-dev build-essentials libblas-dev liblapack-dev libatlas-base-dev gfortran
-$ pip install numpy ad3 atlas decorator boto bz2file cvxopt cycler nltk httpretty logging path.py pexpect ptyprocess pyparsing pystruct python-dateutil pytz requests scipy Cython scikit-learn simplegeneric six smart-open threadpool traitlets sklearn
+$ pip install -r requirements.txt
+$ pip install pystruct
 ```
 
 ## Extra packages:
@@ -18,7 +19,7 @@ $ pip install numpy ad3 atlas decorator boto bz2file cvxopt cycler nltk httprett
 After installing nltk, get into python shell and download its content:
 
 ```
-python -c "import nltk;nltk.download('all')"
+python -c "import nltk;nltk.download('punkt');nltk.download('averaged_perceptron_tagger')"
 ```
 
 ## Run the projects:
