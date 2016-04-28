@@ -6,7 +6,21 @@
 Python version 2.7.10
 ```
 
-Install the required libraries and dependencies:
+## Download
+
+```
+git clone https://github.com/nlpaueb/aueb-absa.git
+cd acd_ote
+```
+
+If you are using virtualenv:
+
+```
+virtualenv env
+source env/bin/activate
+```
+
+## Install the required libraries and dependencies:
 
 ```
 $ sudo apt-get install python-pip python-dev build-essentials libblas-dev liblapack-dev libatlas-base-dev gfortran
