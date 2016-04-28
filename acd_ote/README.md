@@ -9,15 +9,15 @@ Python version 2.7.10
 ## Download
 
 ```
-git clone https://github.com/nlpaueb/aueb-absa.git
-cd acd_ote
+$ git clone https://github.com/nlpaueb/aueb-absa.git
+$ cd acd_ote
 ```
 
 If you are using virtualenv:
 
 ```
-virtualenv env
-source env/bin/activate
+$ virtualenv env
+$ source env/bin/activate
 ```
 
 ## Install the required libraries and dependencies:
@@ -33,7 +33,7 @@ $ pip install pystruct
 After installing nltk, get into python shell and download its content:
 
 ```
-python -c "import nltk;nltk.download('punkt');nltk.download('averaged_perceptron_tagger')"
+>> python -c "import nltk;nltk.download('punkt');nltk.download('averaged_perceptron_tagger')"
 ```
 
 ## Run the projects:
