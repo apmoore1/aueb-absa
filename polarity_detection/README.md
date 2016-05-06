@@ -17,13 +17,14 @@ publicly available.
 
 ```
 Python version 2.7.10
+Operating System : Linux(Ubuntu)
 ```
 
 ## Download
 
 ```
 git clone https://github.com/nlpaueb/aueb-absa.git
-cd polarity_detection
+cd aueb-absa/polarity_detection
 ```
 
 If you are using virtualenv:
