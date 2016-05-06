@@ -88,3 +88,18 @@ Make sure that you have a java compiler installed needed for the pos tagging:
 ```
 sudo apt-get install openjdk-7-jdk
 ```
+
+## Semeval 2016
+
+Our results
+
+```
+Laptops 76.94%, 6th place
+Restaurants 83.24, 6th place
+```
+
+You can download the necessary data and tools from the Semeval's web page:
+
+```
+http://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools
+```
