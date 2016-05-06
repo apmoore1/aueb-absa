@@ -91,7 +91,7 @@ sudo apt-get install openjdk-7-jdk
 
 ## Semeval 2016
 
-Our results
+Our results:
 
 ```
 Laptops 76.94%, 6th place
