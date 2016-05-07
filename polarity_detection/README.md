@@ -94,8 +94,8 @@ sudo apt-get install openjdk-7-jdk
 Our results:
 
 ```
-Laptops 76.94%, 6th place
-Restaurants 83.24, 6th place
+Laptops 76.94% Accuracy, ranked 6th/21
+Restaurants 83.24 Accuracy, ranked 6th/28
 ```
 
 You can download the necessary data and tools from the Semeval's web page:
