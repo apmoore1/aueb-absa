@@ -1,7 +1,7 @@
 # Aspect Based Sentiment Analysis
 
-This is the software that accompanies the paper AUEB-ABSA at SemEval-2016 Task 5:
-Supervised Machine Learning for Aspect Based Sentiment Analysis by Dionysios Xenos, 
+This is the software that accompanies the paper "AUEB-ABSA at SemEval-2016 Task 5:
+Supervised Machine Learning for Aspect Based Sentiment Analysis" by Dionysios Xenos, 
 Panagiotis Theodorakakos, John Pavlopoulos, Prodromos Malakasiotis and Ion Androutsopoulos. 
 
 This paper describes our submissions to the Aspect Based Sentiment Analysis task of
