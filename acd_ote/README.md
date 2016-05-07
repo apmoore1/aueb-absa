@@ -4,7 +4,7 @@
 
 ```
 Python version 2.7.10
-Operating System : Linux (Ubuntu)
+Operating System: Linux (Ubuntu)
 ```
 
 ### Download
@@ -74,7 +74,7 @@ For the unconstrained submission on the Laptops domain, for the ACD task:
 $ python acd_unconstrained_laptops.py --train data/laptops/train.xml --test data/laptops/test.xml 
 ```
 
-## Troubleshooting
+### Troubleshooting
 
 Make sure that you have the following requirements installed:
 
@@ -82,7 +82,7 @@ Make sure that you have the following requirements installed:
 $ sudo apt-get install python-pip python-dev build-essentials libblas-dev liblapack-dev libatlas-base-dev gfortran git
 ```
 
-## Semeval 2016
+### Semeval 2016
 
 Our results:
 
