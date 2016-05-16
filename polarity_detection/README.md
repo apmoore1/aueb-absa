@@ -95,7 +95,7 @@ Our results:
 
 ```
 Laptops 76.94% Accuracy, ranked 6th/21
-Restaurants 83.24 Accuracy, ranked 6th/28
+Restaurants 83.24% Accuracy, ranked 6th/28
 ```
 
 You can download the necessary data and tools from the Semeval's web page:
