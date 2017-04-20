@@ -20,7 +20,7 @@ class features():
 		
 	#reads the idf lexicon created from the amazon corpus
 	def readIDF(self,path):
-		f = open(path, "r")
+		f = open(path, "r", encoding='ascii')
 		values = []
 		idfs = []
 		for word in f:
@@ -148,10 +148,7 @@ class features():
 		for i in range(len(centroid)): #join the matrices
 			tmp = centroid[i].tolist()
 			train_vector.append(tmp)
-
-
-		print
-		print '---- End of train ----'
+		print('---- End of train ----')
 
 		return train_vector,train_tags
     
@@ -183,9 +180,8 @@ class features():
 		for i in range(len(centroid)): #join the matrices
 			tmp = centroid[i].tolist()
 			test_vector.append(tmp)
-		
-		print
-		print '---- End of Test ----'
+
+		print('---- End of Test ----')
 
 		return test_vector
     

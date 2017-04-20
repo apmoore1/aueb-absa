@@ -10,14 +10,14 @@ command = "java -Xmx500m -jar "+directory+jar_path+jar_name+" "+directory+file_n
 
 def messageToFile(message):
     text_file = open(directory+file_name, "w")
-    text_file.write(message.encode("utf-8"))
+    text_file.write(message)
     text_file.close()
 
 def listToFile(messages):
     text_file = open(directory+file_name,"w")
     for m in messages:
         #sta dika sas minimata i allgi grammis mporei na min xreiazetai, tsekare to
-        text_file.write(m.encode("utf-8")+"\n")
+        text_file.write(m+"\n")
 
     text_file.close()
 

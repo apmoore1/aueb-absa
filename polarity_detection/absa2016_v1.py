@@ -15,7 +15,7 @@ import absa2016_embeddings
 #m = gensim.models.Word2Vec.load('model.bin') #load the model
 
 #---------- use the helpingEmbeddings.txt instead of the embeddings model ----------
-e = open("helpingEmbeddings.txt","r")
+e = open("helpingEmbeddings.txt","r", encoding='ascii')
 tmp = []
 for a in e:
 	tmp.append(a.split(" ")) #store the lexicon in an array
@@ -50,7 +50,7 @@ for line in tmp:
 #---------- use the helpingEmbeddings.txt instead of the embeddings model ----------
 
 
-print '---------------- Restaurants ----------------'
+print('---------------- Restaurants ----------------')
 print
 
 print('-------- Features Model--------')
@@ -58,14 +58,14 @@ fea1 = absa2016_lexicons.features('restaurants/ABSA16_Restaurants_Train_SB1_v2.x
 train_vector,train_tags = absa2016_lexicons.features.train(fea1,'rest')
 test_vector = absa2016_lexicons.features.test(fea1,'rest')
 predictionsRest1 = absa2016_lexicons.features.results(fea1, train_vector, train_tags, test_vector,'rest')
-print 'End version 5'
+print('End version 5')
 
 print('-------- Embeddings Model--------')
 fea1 = absa2016_embeddings.features('restaurants/ABSA16_Restaurants_Train_SB1_v2.xml','restaurants/EN_REST_SB1_TEST.xml',m)
 train_vector,train_tags = absa2016_embeddings.features.train(fea1)
 test_vector = absa2016_embeddings.features.test(fea1)
 predictionsRest2 = absa2016_embeddings.features.results(fea1, train_vector, train_tags, test_vector,'rest') #store probabilities for each of the three class for each sentence
-print 'End version 6'
+print('End version 6')
 
 #both methods "vote"
 l = len(predictionsRest1)
@@ -162,22 +162,21 @@ with codecs.open('AUEB-ABSA_REST_EN_B_SB1_3_1_U.xml', 'w','utf-8') as o:
 
 
 
-print '---------------- Laptops ----------------'
-print
+print('---------------- Laptops ----------------')
 
 print('-------- Features Model--------')
 fea2 = absa2016_lexicons.features('laptops/ABSA16_Laptops_Train_SB1_v2.xml','laptops/EN_LAPT_SB1_TEST_.xml','lap')
 train_vector,train_tags = absa2016_lexicons.features.train(fea2,'lap')
 test_vector = absa2016_lexicons.features.test(fea2,'lap')
 predictionsLap1 = absa2016_lexicons.features.results(fea2, train_vector, train_tags, test_vector,'lap')
-print 'End version 5'
+print('End version 5')
 
 print('-------- Embeddings Model--------')
 fea2 = absa2016_embeddings.features('laptops/ABSA16_Laptops_Train_SB1_v2.xml','laptops/EN_LAPT_SB1_TEST_.xml',m)
 train_vector,train_tags = absa2016_embeddings.features.train(fea2)
 test_vector = absa2016_embeddings.features.test(fea2)
 predictionsLap2 = absa2016_embeddings.features.results(fea2, train_vector, train_tags, test_vector,'lap') #store probabilities for each of the three class for each sentence
-print 'End version 6'
+print('End version 6')
 
 #both methods "vote"
 l = len(predictionsLap1)
@@ -226,7 +225,7 @@ for review in reviews:
 
 counter = 0
 #print the output in an xml file
-with codecs.open('AUEB-ABSA_LAPT_EN_B_SB1_3_1_U.xml', 'w') as o:
+with codecs.open('AUEB-ABSA_LAPT_EN_B_SB1_3_1_U.xml', 'w', encoding='ascii') as o:
 	o.write('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n')
 	o.write('<Reviews>\n')
 	for review in r:

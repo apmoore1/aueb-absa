@@ -41,7 +41,7 @@ class features():
 		
 	#reads the stopwords
 	def readStopW(self,path):
-		f = open(path, "r")
+		f = open(path, "r", encoding='ascii', errors='ignore')
 		stopwords=[]
 		for word in f:
 			tmp = word.replace('\n','').lower()
@@ -53,7 +53,7 @@ class features():
 
 	#reads the negation lexicon
 	def readNeg(self,path):
-		f = open(path, "r")
+		f = open(path, "r", encoding='ascii', errors='ignore')
 		negation=[]
 		for word in f:
 			tmp = word.replace('\n','').lower()
@@ -65,7 +65,7 @@ class features():
 
 	#reads the nrc lexicon
 	def readLexNRC(self,path):
-		f = open(path, "r")
+		f = open(path, "r", encoding='ascii', errors='ignore')
 		lexicon=[]
 		counter,s = 0,0
 		positive = ['joy','surprise','anticipation','trust', 'positive']
@@ -93,7 +93,7 @@ class features():
 
 	#reads the lexicon, AFINN, Liu
 	def readLex(self,path):
-		f = open(path, "r")
+		f = open(path, "r", encoding='ascii', errors='ignore')
 		lexicon=[]
 		for word in f:
 			score=[]
@@ -114,7 +114,7 @@ class features():
 
 	#reads the lexicon of bigrams
 	def readLexBigram(self,path):
-		f = open(path, "r")
+		f = open(path, "r", encoding='ascii', errors='ignore')
 		lexicon=[]
 		for word in f:
 			score=[]
@@ -511,9 +511,7 @@ class features():
 
 		for i in range(len(temp_vector)): #join the matrices
 			train_vector.append(temp_vector[i] + train_pos[i] + train_pos_bi[i])
-
-		print
-		print '---- End of train ----'
+		print('---- End of train ----')
 
 		return train_vector,train_tags
 
@@ -580,9 +578,7 @@ class features():
 
 		for i in range(len(temp_vector)): #join the matrices
 			test_vector.append(temp_vector[i] + test_pos[i] + test_pos_bi[i])
-
-		print
-		print '---- End of Test ----'
+		print('---- End of Test ----')
 		
 		return test_vector
 
